@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qov-2w-60y">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="91709e9e78f832000046" translatesAutoresizingMaskIntoConstraints="NO" id="1EA-Ci-GFL">
+                                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1920" id="0m6-JC-VKc"/>
+                                            <constraint firstAttribute="height" constant="1080" id="asZ-vT-k5l"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1EA-Ci-GFL" firstAttribute="top" secondItem="qov-2w-60y" secondAttribute="top" id="YfI-9X-fH6"/>
+                                    <constraint firstItem="1EA-Ci-GFL" firstAttribute="leading" secondItem="qov-2w-60y" secondAttribute="leading" id="mlw-9o-viA"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qov-2w-60y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JGB-6H-3d5"/>
+                            <constraint firstAttribute="bottom" secondItem="qov-2w-60y" secondAttribute="bottom" id="T85-NS-dTD"/>
+                            <constraint firstItem="qov-2w-60y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Z6p-GU-4j6"/>
+                            <constraint firstAttribute="trailing" secondItem="qov-2w-60y" secondAttribute="trailing" id="zg2-3e-YCD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myimageView" destination="1EA-Ci-GFL" id="VNR-zu-79d"/>
+                        <outlet property="myscrollView" destination="qov-2w-60y" id="1v5-LW-Ruc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="91709e9e78f832000046" width="1920" height="1080"/>
+    </resources>
+</document>
